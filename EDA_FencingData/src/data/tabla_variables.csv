@@ -1,0 +1,31 @@
+Variable,Definición,Tipo de Variable,Prioridad,Comentario
+id,Identificador único de la competidora.,Categórica (ID),Alta,Es clave para identificar a la floretista.
+opp_ID,Identificador único de la oponente.,Categórica (ID),Alta,También importante para identificar a la oponente.
+fencer_age,Edad de la competidora.,Numérica,Alta,Puede influir en el rendimiento de la competidora.
+opp_age,Edad de la oponente.,Numérica,Alta,Importante para ver si la edad afecta el rendimiento.
+fencer_score,Puntuación de la competidora en el duelo.,Numérica,Alta,Clave para comparar el rendimiento entre competidoras.
+opp_score,Puntuación de la oponente en el duelo.,Numérica,Alta,"Similar a fencer_score, para comparar los resultados entre ambas competidoras."
+winner_ID,Identificador de la competidora ganadora (igual a id si la competidora gana).,Categórica (ID),Alta,Importante para determinar la ganadora.
+fencer_curr_pts,Puntos acumulados actuales de la competidora.,Numérica,Alta,Importante para analizar si más puntos acumulados se relacionan con más victorias.
+opp_curr_pts,Puntos acumulados actuales de la oponente.,Numérica,Alta,"Similar a fencer_curr_pts, para comparar el rendimiento en base a puntos."
+competition_ID_x,Identificador único de la competición de la competidora.,Categórica (ID),Media,Relacionado con el rendimiento de la competidora en cada competición.
+competition_ID_y,Identificador único de la competición de la oponente.,Categórica (ID),Media,"Similar al anterior, se puede usar para comparaciones entre competidoras."
+pool_ID,Identificador de la piscina o grupo en que compiten las competidoras.,Categórica (ID),Baja,"Relacionada con la fase de la competición, pero no directamente relevante para el análisis principal."
+upset,Variable binaria que indica si hubo un 'upset' (sorpresa) en la competición.,Categórica (Binaria),Alta,Puede ser interesante para ver si la competidora con más puntos se enfrenta a 'upsets'.
+date,Fecha de la competición.,Fecha,Media,Útil para analizar tendencias a lo largo del tiempo.
+country_code,Código del país de la competidora.,Categórica (Categoría),Media,"Útil para análisis por país, aunque no es la principal variable de interés."
+country_x,Nombre del país de la competidora.,Categórica (Categoría),Media,"Similar a country_code, pero con más detalle."
+hand,Mano dominante de la competidora (derecha o izquierda).,Categórica (Categoría),Baja,"Puede influir en el rendimiento, pero no es crucial en el análisis general."
+age,Edad de la competidora.,Numérica,Alta,"Relacionado con el rendimiento y las diferencias entre competidoras, como la edad de las juniors vs seniors."
+category_x,"Categoría de la competidora (Junior, Senior, etc.).",Categórica (Categoría),Alta,Fundamental para ver si las categorías afectan los resultados.
+category_y,Categoría de la oponente.,Categórica (Categoría),Media,"Similar a category_x, para comparar entre competidoras."
+season_x,Temporada de la competidora.,Categórica (Categoría),Media,Puede ser relevante para ver cómo cambian los resultados con el tiempo.
+season_y,Temporada de la oponente.,Categórica (Categoría),Media,"Similar a season_x, comparaciones entre competidoras."
+rank,Clasificación de la competidora.,Numérica,Alta,"Muy relevante para tu análisis, pues se puede relacionar con el rendimiento."
+points,Puntos obtenidos por la competidora en la competición.,Numérica,Alta,"Es la variable clave en tu hipótesis, relacionada con el rendimiento."
+start_date,Fecha de inicio de la competición.,Fecha,Media,Importante para ver cómo cambian los puntos y resultados en función del tiempo.
+end_date,Fecha de fin de la competición.,Fecha,Media,"Similar a start_date, relevante para analizar la duración y el efecto de las competiciones."
+timezone,Zona horaria de la competición.,Categórica (Categoría),Baja,"Relativamente irrelevante para el análisis, pero puede ser útil si comparas competiciones en diferentes zonas."
+url_x,URL de la competidora.,Categórica (URL),Baja,"Irrelevante para el análisis, más bien útil como referencia."
+url_y,URL de la oponente.,Categórica (URL),Baja,"Similar a url_x, no afecta el análisis."
+unique_ID,Identificador único de la competidora para cada entrada.,Categórica (ID),Alta,"Similar a id, clave para realizar un seguimiento de las competidoras."
